@@ -202,9 +202,6 @@ exports.decorateConfig = (config) => {
     return Object.assign({}, config, {
         css: `
             ${config.css || ''}
-            .hyper_main {
-                border: 0;
-            }
             .header_header {
                 top: 0;
                 right: 0;
@@ -214,7 +211,7 @@ exports.decorateConfig = (config) => {
                 color: ${isDark ? 'white' : config.foregroundColor};
             }
             .tabs_list {
-                margin-left: 0;
+                margin: 0 1px;
             }
             .tabs_borderShim {
                 display: none;
@@ -288,8 +285,17 @@ exports.decorateConfig = (config) => {
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
+            .tab_process.tab_active:before {
+                background-color: white;
+            }
             .tab_shape {
                 display: none;
+            }
+            .header_appTitle.blue {
+                color: #199FF6;
+            }
+            .header_appTitle.white {
+                color: #fff;
             }
             ${hyperTabs.trafficButtons ? trafficButtonsCSS : ''}
             ${hyperTabs.trafficButtons && hyperTabs.border ? trafficButtonsBorderCSS : ''}
@@ -318,14 +324,22 @@ exports.decorateTab = (Tab, { React }) => {
     }
 };
 
-exports.decorateTabs = (Tabs, { React }) => {
-    return class extends Tabs {
+exports.decorateHeader = (Header, { React }) => {
+    return class extends Tab {
         render() {
             if (this.props.tabs.length === 1 && typeof this.props.tabs[0].title === 'string') {
                 const icon = getIcon(this.props.tabs[0].title);
-                this.props.tabs[0].title = React.createElement('span', { className: `tab_process process_${icon}` }, this.props.tabs[0].title);
+                this.props.tabs[0].title = React.createElement('span', { className: `tab_process tab_active process_${icon}` }, this.props.tabs[0].title);
+                var [hat] = document.getElementsByClassName("header_appTitle");
+                hat.classList.remove("blue");
+                hat.classList.add("white"); 
             }
-            return React.createElement(Tabs, Object.assign({}, this.props, {}));
+            if (this.props.tabs.length > 1) {
+                var [hat] = document.getElementsByClassName("header_appTitle");
+                hat.classList.remove("white");
+                hat.classList.add("blue"); 
+            }
+            return React.createElement(Header, Object.assign({}, this.props, {}));
         }
     }
 };
