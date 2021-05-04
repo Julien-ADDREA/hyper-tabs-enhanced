@@ -1,13 +1,13 @@
 {
-  "name": "hyper-tabs-enhanced",
-  "version": "0.4.2",
+  "name": "hyper-tabs-enhanced-plus",
+  "version": "0.4.3",
   "description": "Enhaned Tabs Plugin for Hyper",
   "main": "index.js",
   "license": "MIT",
-  "repository": "henrikdahl/hyper-tabs-enhanced",
+  "repository": "Julien-ADDREA/hyper-tabs-enhanced",
   "author": {
-    "name": "Henrik Dahlheim",
-    "email": "henrik.dahlheim@gmail.com"
+    "name": "Julien Bourgeois",
+    "email": "jbourgeois@addrea.fr"
   },
   "files": [
     "index.js"
