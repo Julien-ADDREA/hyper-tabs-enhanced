@@ -4,7 +4,7 @@
   "description": "Enhaned Tabs Plugin for Hyper",
   "main": "index.js",
   "license": "MIT",
-  "repository": "Julien-ADDREA/hyper-tabs-enhanced",
+  "repository": "Julien-ADDREA/hyper-tabs-enhanced-plus",
   "author": {
     "name": "Julien Bourgeois",
     "email": "jbourgeois@addrea.fr"
