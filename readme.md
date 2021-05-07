@@ -1,4 +1,4 @@
-# hyper-tabs-enhanced-plus [![hyper](https://img.shields.io/badge/Hyper-v1.3.0-green.svg)](https://github.com/zeit/hyper/releases/tag/1.3.0) [![npm](https://img.shields.io/npm/v/hyper-tabs-enhanced.svg?maxAge=86400?style=flat-square)](https://www.npmjs.com/package/hyper-tabs-enhanced) [![npm](https://img.shields.io/npm/dt/hyper-tabs-enhanced.svg?maxAge=86400?style=flat-square)](https://www.npmjs.com/package/hyper-tabs-enhanced)
+# hyper-tabs-enhanced-plus [![hyper](https://img.shields.io/badge/Hyper-v3.0.2-green.svg)](https://github.com/zeit/hyper/releases/tag/3.0.2) [![npm](https://img.shields.io/npm/v/hyper-tabs-enhanced-plus.svg?maxAge=86400?style=flat-square)](https://www.npmjs.com/package/hyper-tabs-enhanced-plus) [![npm](https://img.shields.io/npm/dt/hyper-tabs-enhanced-plus.svg?maxAge=86400?style=flat-square)](https://www.npmjs.com/package/hyper-tabs-enhanced-plus)
 
 > Enhanced Tabs Plugin for [Hyper](https://hyper.is). Matches any theme.
 
