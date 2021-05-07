@@ -1,7 +1,7 @@
 {
   "name": "hyper-tabs-enhanced-plus",
-  "version": "0.4.3",
-  "description": "Enhaned Tabs Plugin for Hyper",
+  "version": "0.4.4",
+  "description": "Enhaned Plus Tabs Plugin for Hyper",
   "main": "index.js",
   "license": "MIT",
   "repository": "Julien-ADDREA/hyper-tabs-enhanced-plus",
