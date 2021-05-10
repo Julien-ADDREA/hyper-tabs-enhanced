@@ -325,19 +325,19 @@ exports.decorateTab = (Tab, { React }) => {
 };
 
 exports.decorateHeader = (Header, { React }) => {
-    return class extends Tab {
+    return class extends Header {
         render() {
             if (this.props.tabs.length === 1 && typeof this.props.tabs[0].title === 'string') {
                 const icon = getIcon(this.props.tabs[0].title);
                 this.props.tabs[0].title = React.createElement('span', { className: `tab_process tab_active process_${icon}` }, this.props.tabs[0].title);
                 var [hat] = document.getElementsByClassName("header_appTitle");
                 hat.classList.remove("blue");
-                hat.classList.add("white"); 
+                hat.classList.add("white");
             }
             if (this.props.tabs.length > 1) {
                 var [hat] = document.getElementsByClassName("header_appTitle");
                 hat.classList.remove("white");
-                hat.classList.add("blue"); 
+                hat.classList.add("blue");
             }
             return React.createElement(Header, Object.assign({}, this.props, {}));
         }
